@@ -7,7 +7,7 @@ body {
 
 label {
     font-weight: normal !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
 }
 
 body {
@@ -19,12 +19,9 @@ footer {
     height: 60px;
 }
 
-.box-home {
-    border-radius: 5px;
-    background-color: white ;
+.fieldset-auto-width {
+    display: inline-block;
 }
-
-
 
 .margin-left-small {margin-left: 8px;}
 .margin-right-small {margin-right: 8px;}

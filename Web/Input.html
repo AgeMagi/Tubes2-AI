@@ -26,128 +26,158 @@
 </h1>
 
 <div class="container">
-    <div class="container">
-        <div class="row" style ="color:black; ">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="well well-sm">
-                    <form class="form-horizontal" action="" method="post">
-                        <fieldset>
-                            <legend class="text-center" style="font-size: 16px">Fill in your health conditions below!</legend>
+    <div class="row" style ="color:black; ">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="well well-sm">
+                <form class="form-horizontal" action="" method="post">
+                        <legend class="text-center" style="font-size: 16px">Fill in your conditions below!</legend>
 
-                            <!-- Age input-->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="name">Age</label>
-                                <div class="col-md-9">
-                                    <input id="name" name="age" type="text" placeholder="Your age (in years)" class="form-control">
-                                </div>
+                        <!-- Age input-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="name">Age</label>
+                            <div class="col-md-9">
+                                <input id="name" name="age" type="text" placeholder="Your age (in years)" class="form-control">
                             </div>
+                        </div>
 
-                            <!-- Sex input-->
-                            <div class="form-group">
-                                <label style ="font-weight:300px;" class="col-md-3 control-label" for="sex">Sex</label>
-                                <div class="col-md-9">
-                                    <input id="sex" name="sex" type="text" placeholder="Your sex" class="form-control">
-                                </div>
+                        <!-- Sex input-->
+                        <div class="form-group">
+                            <label style ="font-weight:300px;" class="col-md-3 control-label" for="sex">Sex</label>
+                            <div class="col-md-9">
+                                <select name="sex" id="sex" class="form-control">
+                                    <option disabled value="" selected hidden >Select one</option>
+                                    <option value="1">Male</option>
+                                    <option value="0">Female</option>
+                                </select>
                             </div>
+                        </div>
 
-                            <!-- Chest-pain body -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="chest_pain">Chest-pain type</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="chest_pain" name="chest_pain" placeholder="Your chest-pain type" rows="5"></textarea>
-                                </div>
+                        <!-- Chest-pain body -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="ctp">Chest-pain type</label>
+                            <div class="col-md-9">
+                                <select name="sex" id="ctp" class="form-control">
+                                    <option disabled value="" selected hidden >Select one</option>
+                                    <option value="1">Typical Angina</option>
+                                    <option value="2">Atypical Angina</option>
+                                    <option value="3">Non-anginal Pain</option>
+                                    <option value="4">Asymptotic</option>
+                                </select>
                             </div>
+                        </div>
 
-                            <!-- resting blood pressure body -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="rbp">Resting blood pressure</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="rbp" name="rbp" placeholder="Your resting blood pressure... (mmHg)" rows="5"></textarea>
-                                </div>
+                        <!-- resting blood pressure body -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="rbp">Resting blood pressure</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" id="rbp" name="rbp" placeholder="Your resting blood pressure... (mmHg)" rows="5"></textarea>
                             </div>
+                        </div>
 
-                            <!-- serum cholestrol -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="sc"> Serum cholestrol</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="sc" name="sc" placeholder="Your serum cholestrol... (mg/dl)" rows="5"></textarea>
-                                </div>
+                        <!-- serum cholestrol -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="sc"> Serum cholestrol</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" id="sc" name="sc" placeholder="Your serum cholestrol... (mg/dl)" rows="5"></textarea>
                             </div>
+                        </div>
 
-                            <!-- fasting blood sugar -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="fbs"> Fasting blood sugar</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="fbs" name="fbs" placeholder="Your fasting blood sugar... (> 120 mg/dl or <= 120 mg/dl)" rows="5"></textarea>
-                                </div>
+                        <!-- fasting blood sugar -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="fbs"> Fasting blood sugar</label>
+                            <div class="col-md-9">
+                                <select name="fbs" id="fbs" class="form-control">
+                                    <option disabled value="" selected hidden >Select one</option>
+                                    <option value="1">>120 mg/dl</option>
+                                    <option value="0"><=120 mg/dl</option>
+                                </select>
                             </div>
+                        </div>
 
-                            <!-- resting ECG -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="recg"> Resting ECG</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="recg" name="recg" placeholder="Resting ECG?... (true or false)" rows="5"></textarea>
-                                </div>
+                        <!-- resting ECG -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="recg"> Resting ECG</label>
+                            <div class="col-md-9">
+                                <select name="recg" id="recg" class="form-control">
+                                    <option disabled value="" selected hidden >Select one</option>
+                                    <option value="0">Normal</option>
+                                    <option value="1">Having ST-T wave abnormality</option>
+                                    <option value="2">Left ventricular hyperthrophy</option>
+                                </select>
                             </div>
+                        </div>
 
-                            <!-- max-heart rate achieved -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="mhra"> Max-heart rate achieved</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="mhra" name="mhra" placeholder="Your max-heart rate achieved" rows="5"></textarea>
-                                </div>
+                        <!-- max-heart rate achieved -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="mhra"> Max-heart rate achieved</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" id="mhra" name="mhra" placeholder="Your max-heart rate achieved..." rows="5"></textarea>
                             </div>
+                        </div>
 
-                            <!-- Exercise induced angina -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="eia"> Exercise induced angina</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="eia" name="eia" placeholder="Excercise induced angina? (yes or no)" rows="5"></textarea>
-                                </div>
+                        <!-- Exercise induced angina -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="eia"> Exercise induced angina</label>
+                            <div class="col-md-9">
+                                <select name="eia" id="eia" class="form-control">
+                                    <option disabled value="" selected hidden >Select one</option>
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                </select>
                             </div>
+                        </div>
 
-                            <!-- ST depression induced by exercise relative to rest -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="st"> ST depression induced by exercise relative to rest</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="st" name="st" placeholder="Excercise induced angina? (yes or no)" rows="5"></textarea>
-                                </div>
+                        <!-- ST depression induced by exercise relative to rest -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="st"> ST depression induced by exercise relative to rest</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" id="st" name="st" placeholder="Your ST depression induced by exercise relative to rest.." rows="5"></textarea>
                             </div>
+                        </div>
 
-                            <!-- peak  -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="stp"> Peak exercise ST segment</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="stp" name="stp" placeholder="Peak exercise ST segment" rows="5"></textarea>
-                                </div>
+                        <!-- peak  -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="stp"> Peak exercise ST segment</label>
+                            <div class="col-md-9">
+                                <select name="stp" id="stp" class="form-control">
+                                    <option disabled value="" selected hidden >Select one</option>
+                                    <option value="1">Upsloping</option>
+                                    <option value="2">Flat</option>
+                                    <option value="3">Downsloping</option>
+                                </select>
                             </div>
+                        </div>
 
-                            <!-- number of major vessels -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="nmv"> Number of major vessels</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="nmv" name="nmv" placeholder="Number of major vessels (0-3)" rows="5"></textarea>
-                                </div>
+                        <!-- number of major vessels -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="nmv"> Number of major vessels</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" id="nmv" name="nmv" placeholder="Number of major vessels (0-3)" rows="5"></textarea>
                             </div>
+                        </div>
 
-                            <!-- thal -->
-                            <div class="form-group">
-                                <label class="col-md-3 control-label" for="thal"> thal</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="thal" name="thal" placeholder="thal.." rows="5"></textarea>
-                                </div>
+                        <!-- thal -->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="thal"> thal</label>
+                            <div class="col-md-9">
+                                <select name="thal" id="thal" class="form-control">
+                                    <option disabled value="" selected hidden >Select one</option>
+                                    <option value="3">Normal</option>
+                                    <option value="6">Fixed defect</option>
+                                    <option value="7">Reversable defect</option>
+                                </select>
                             </div>
+                        </div>
 
 
-                            <!--  actions -->
-                            <div class="form-group">
-                                <div class="col-md-12 text-right">
-                                    <button type="submit" class="btn btn-primary btn-lg">Check Now</button>
-                                </div>
+                        <!--  actions -->
+                        <div class="form-group">
+                            <div class="col-md-12 text-right">
+                                <button type="submit" class="btn btn-primary btn-lg">Check Now</button>
                             </div>
-                        </fieldset>
-                    </form>
-                </div>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
     </div>
